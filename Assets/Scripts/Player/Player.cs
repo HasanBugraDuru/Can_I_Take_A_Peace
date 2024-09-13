@@ -79,6 +79,7 @@ public class Player : MonoBehaviour
             }
             else
             {
+                anim.SetBool("Jump", false);
                 isJumping = false;
             }
             
@@ -87,6 +88,7 @@ public class Player : MonoBehaviour
         //Jump Button Was released
         if (UserInput.instance.controls.Jumping.Jump.WasReleasedThisFrame())
         {
+            anim.SetBool("Jump", false);
             isJumping = false;
         }
     }
@@ -140,6 +142,7 @@ public class Player : MonoBehaviour
         coll.bounds.size, 0f, Vector2.down, extraHeight, whatIsGround);
         if(groundHit.collider != null)
         {
+            anim.SetBool("Jump",true);
             return true;
         }
         else
