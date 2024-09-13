@@ -28,7 +28,7 @@ public class PatrolBehave : MonoBehaviour
     void Update()
     {
         speed = _rb.velocity.x;
-        if (Vector2.Distance(transform.position, nextPoint.position) > 1f&&readyToMove)
+        if (Vector2.Distance(transform.position, nextPoint.position) > 2f&&readyToMove)
         {
             if (transform.position.x < nextPoint.position.x)
             {
@@ -57,10 +57,11 @@ public class PatrolBehave : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<IActionable>() != null&&collision.gameObject==nextPoint.gameObject&&Vector2.Distance(transform.position,nextPoint.position)<2f)
+        if (collision.gameObject.GetComponent<IActionable>() != null)
         {
             collision.gameObject.GetComponent<IActionable>().action();
             Debug.Log("ACTÝON");
         }
+       
     }
 }
