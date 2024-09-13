@@ -8,7 +8,7 @@ public class VisionCheck : MonoBehaviour
     public Light2D _lightsource;
     float angle;
     RaycastHit2D RC;
-
+    [SerializeField] LayerMask playerLayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +20,7 @@ public class VisionCheck : MonoBehaviour
             _lightsource = GetComponentInChildren<Light2D>();
 
 
-
+      
     }
 
     // Update is called once per frame
@@ -34,7 +34,7 @@ public class VisionCheck : MonoBehaviour
             angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             //  Debug.Log(angle+collision.name);
 
-            RC = Physics2D.Raycast(transform.position, collision.transform.position - transform.position);
+            RC = Physics2D.Raycast(transform.position, collision.transform.position - transform.position,10,playerLayer);
             Debug.DrawLine(transform.position, RC.point);
              Debug.Log(RC.collider.name + "hit by light raycast");
 

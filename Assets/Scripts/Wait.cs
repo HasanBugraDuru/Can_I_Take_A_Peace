@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Wait : MonoBehaviour,IActionable
 {
-    PatrolBehave patrol;
-    GameObject npc;
+    public PatrolBehave patrol;
+    public GameObject npc;
     float waitTimeCounter;
     [SerializeField]float  _waitTime;
     public bool startTimer;
