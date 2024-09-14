@@ -17,7 +17,7 @@ TagManager:
   - Vision
   - Point
   - Enemy
-  - 
+  - Transforable
   - 
   - 
   - 
@@ -39,12 +39,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Player
-    uniqueID: 2133053417
+  - name: BG
+    uniqueID: 1088331239
     locked: 0
-  - name: Wepon
-    uniqueID: 1952369011
+  - name: Misc
+    uniqueID: 380389997
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 2133053417
     locked: 0

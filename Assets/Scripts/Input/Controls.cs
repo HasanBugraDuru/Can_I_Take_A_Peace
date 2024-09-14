@@ -351,8 +351,58 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Scan"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""db4d4bee-ca45-45c6-8fd6-6be439833edb"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Scan"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Transform"",
+            ""id"": ""e14fc766-6ce5-456a-a47b-17cf6f048b09"",
+            ""actions"": [
+                {
+                    ""name"": ""Transform"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""e2e5a46a-0e5a-4a10-a902-d142cc2cd711"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""aea836f4-ded0-4583-a9ef-b0d3c521dcb2"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Transform"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d5a1247b-7864-4c3d-ab59-8b0b6019eeff"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Transform"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -382,6 +432,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Attack = asset.FindActionMap("Attack", throwIfNotFound: true);
         m_Attack_Attack = m_Attack.FindAction("Attack", throwIfNotFound: true);
         m_Attack_Scan = m_Attack.FindAction("Scan", throwIfNotFound: true);
+        // Transform
+        m_Transform = asset.FindActionMap("Transform", throwIfNotFound: true);
+        m_Transform_Transform = m_Transform.FindAction("Transform", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -585,6 +638,52 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         }
     }
     public AttackActions @Attack => new AttackActions(this);
+
+    // Transform
+    private readonly InputActionMap m_Transform;
+    private List<ITransformActions> m_TransformActionsCallbackInterfaces = new List<ITransformActions>();
+    private readonly InputAction m_Transform_Transform;
+    public struct TransformActions
+    {
+        private @Controls m_Wrapper;
+        public TransformActions(@Controls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Transform => m_Wrapper.m_Transform_Transform;
+        public InputActionMap Get() { return m_Wrapper.m_Transform; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(TransformActions set) { return set.Get(); }
+        public void AddCallbacks(ITransformActions instance)
+        {
+            if (instance == null || m_Wrapper.m_TransformActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_TransformActionsCallbackInterfaces.Add(instance);
+            @Transform.started += instance.OnTransform;
+            @Transform.performed += instance.OnTransform;
+            @Transform.canceled += instance.OnTransform;
+        }
+
+        private void UnregisterCallbacks(ITransformActions instance)
+        {
+            @Transform.started -= instance.OnTransform;
+            @Transform.performed -= instance.OnTransform;
+            @Transform.canceled -= instance.OnTransform;
+        }
+
+        public void RemoveCallbacks(ITransformActions instance)
+        {
+            if (m_Wrapper.m_TransformActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(ITransformActions instance)
+        {
+            foreach (var item in m_Wrapper.m_TransformActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_TransformActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public TransformActions @Transform => new TransformActions(this);
     private int m_KeyboardSchemeIndex = -1;
     public InputControlScheme KeyboardScheme
     {
@@ -615,5 +714,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     {
         void OnAttack(InputAction.CallbackContext context);
         void OnScan(InputAction.CallbackContext context);
+    }
+    public interface ITransformActions
+    {
+        void OnTransform(InputAction.CallbackContext context);
     }
 }
