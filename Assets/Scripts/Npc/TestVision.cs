@@ -14,7 +14,7 @@ public class TestVision : MonoBehaviour, IVisible
     }
     private void Update()
     {
-        Debug.Log(panic);
+        Debug.Log("panic"+panic);
         bustedCounter -= Time.deltaTime;
         if (bustedCounter > 0.8)
         {

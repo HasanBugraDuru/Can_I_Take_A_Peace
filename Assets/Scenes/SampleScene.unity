@@ -4227,7 +4227,7 @@ MonoBehaviour:
   npc: {fileID: 1106318129}
   _waitTime: 2.4
   startTimer: 0
-  visionCheck: {fileID: 0}
+  visionCheck: {fileID: 252845999}
 --- !u!1 &1942379564
 GameObject:
   m_ObjectHideFlags: 0
@@ -4652,11 +4652,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 329974422090804123, guid: 41cb00f85e8572c4ab280c922479fa8a, type: 3}
       propertyPath: m_PointLightInnerAngle
-      value: 46.34
+      value: 120.481155
       objectReference: {fileID: 0}
     - target: {fileID: 329974422090804123, guid: 41cb00f85e8572c4ab280c922479fa8a, type: 3}
       propertyPath: m_PointLightOuterAngle
-      value: 46.34
+      value: 120.481155
       objectReference: {fileID: 0}
     - target: {fileID: 329974422090804123, guid: 41cb00f85e8572c4ab280c922479fa8a, type: 3}
       propertyPath: m_PointLightOuterRadius
