@@ -48,10 +48,7 @@ public class VisionCheck : MonoBehaviour
         }
 
     }
-    void Update()
-    {
-        //Debug.Log(-90 - (360 - _lightsource.pointLightOuterAngle) / 2);
-    }
+   
     bool IsShining()
     {
         if (_lightsource.pointLightOuterAngle < 180 && angle > 90 - _lightsource.pointLightOuterAngle / 2 && angle < 90 + _lightsource.pointLightOuterAngle / 2)
@@ -63,19 +60,19 @@ public class VisionCheck : MonoBehaviour
         else if (_lightsource.pointLightOuterAngle > 180 && angle > 90 - _lightsource.pointLightOuterAngle / 2 && angle < 90 + _lightsource.pointLightOuterAngle / 2)
         {
             return true;
-            Debug.Log("Bigger than 180 but still topside");
+          //  Debug.Log("Bigger than 180 but still topside");
         }
 
         else if (_lightsource.pointLightOuterAngle > 180 && angle > -90 + (360 - _lightsource.pointLightOuterAngle) / 2)
         {
             return true;
-            Debug.Log("minus right side ");
+           // Debug.Log("minus right side ");
         }
 
         else if (_lightsource.pointLightOuterAngle > 180 && angle < -90 - (360 - _lightsource.pointLightOuterAngle) / 2)
         {
             return true;
-            Debug.Log("minus right side");
+            //Debug.Log("minus right side");
         }
 
         else return false;

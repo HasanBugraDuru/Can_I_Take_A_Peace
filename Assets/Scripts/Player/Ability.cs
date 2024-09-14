@@ -57,7 +57,7 @@ public class Ability : MonoBehaviour
         else if(collision.GetComponent<Light2D>()!=null)
             collision.GetComponent<Light2D>().intensity = 0f;
 
-        Debug.Log(collision.name);
+        
 
     }
 
