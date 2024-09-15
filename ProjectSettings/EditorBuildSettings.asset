@@ -9,12 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/PisiPisi.unity
     guid: 460d5563e65fc36439a2386e6f383ada
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 566d7b6bc1c0e6e4b9cc6de01821f153
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: b167a14a2a091454a897f72d9e73d00d
+  - enabled: 1
+    path: Assets/Scenes/Story.unity
+    guid: e47f2cd9027f2f144a721cc07a33aa8c
+  - enabled: 1
+    path: Assets/Scenes/Trainer.unity
+    guid: 8fd2caa03ef42634f9ea368ee0d1fa4a
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects: {}
