@@ -20,7 +20,7 @@ public class VisionCheck : MonoBehaviour
             _lightsource = GetComponentInChildren<Light2D>();
 
 
-      
+
     }
 
     // Update is called once per frame
@@ -34,9 +34,9 @@ public class VisionCheck : MonoBehaviour
             angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             //  Debug.Log(angle+collision.name);
 
-            RC = Physics2D.Raycast(transform.position, collision.transform.position - transform.position,10,playerLayer);
+            RC = Physics2D.Raycast(transform.position, collision.transform.position - transform.position, 10, playerLayer);
             Debug.DrawLine(transform.position, RC.point);
-             Debug.Log(RC.collider.name + "hit by light raycast");
+            Debug.Log(RC.collider.name + "hit by light raycast");
 
             if (RC.collider.GetComponent<IVisible>() != null && IsShining() == true)
             {
@@ -48,7 +48,10 @@ public class VisionCheck : MonoBehaviour
         }
 
     }
-   
+    void Update()
+    {
+        //Debug.Log(-90 - (360 - _lightsource.pointLightOuterAngle) / 2);
+    }
     bool IsShining()
     {
         if (_lightsource.pointLightOuterAngle < 180 && angle > 90 - _lightsource.pointLightOuterAngle / 2 && angle < 90 + _lightsource.pointLightOuterAngle / 2)
@@ -60,7 +63,7 @@ public class VisionCheck : MonoBehaviour
         else if (_lightsource.pointLightOuterAngle > 180 && angle > 90 - _lightsource.pointLightOuterAngle / 2 && angle < 90 + _lightsource.pointLightOuterAngle / 2)
         {
             return true;
-          //  Debug.Log("Bigger than 180 but still topside");
+           // Debug.Log("Bigger than 180 but still topside");
         }
 
         else if (_lightsource.pointLightOuterAngle > 180 && angle > -90 + (360 - _lightsource.pointLightOuterAngle) / 2)
@@ -72,7 +75,7 @@ public class VisionCheck : MonoBehaviour
         else if (_lightsource.pointLightOuterAngle > 180 && angle < -90 - (360 - _lightsource.pointLightOuterAngle) / 2)
         {
             return true;
-            //Debug.Log("minus right side");
+           // Debug.Log("minus right side");
         }
 
         else return false;
