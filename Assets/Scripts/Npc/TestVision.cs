@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestVision : MonoBehaviour,IVisible
+public class TestVision : MonoBehaviour, IVisible
 {
     [SerializeField] float bustedCounter;
     [SerializeField] float bustedTime;
@@ -14,9 +14,9 @@ public class TestVision : MonoBehaviour,IVisible
     }
     private void Update()
     {
-        Debug.Log(panic);
+        Debug.Log("panic"+panic);
         bustedCounter -= Time.deltaTime;
-        if (bustedCounter >0.8)
+        if (bustedCounter > 0.8)
         {
             bustedTime += Time.deltaTime;
         }
