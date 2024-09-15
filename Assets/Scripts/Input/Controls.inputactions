@@ -335,6 +335,45 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Transform",
+            "id": "9e46db95-038e-4ac1-b407-7e6029d9c782",
+            "actions": [
+                {
+                    "name": "Transform",
+                    "type": "PassThrough",
+                    "id": "ab207749-ef60-4505-a1fc-00252b3f7b77",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "dd1d329c-c0f2-48d0-92d2-615bc8cce545",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Transform",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9ffa441a-52ca-49a9-985b-03feff04dcdf",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Transform",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

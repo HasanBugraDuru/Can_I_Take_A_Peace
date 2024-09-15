@@ -8,6 +8,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float attackRange = 1.5f;
     [SerializeField] private LayerMask attackableLayer;
     [SerializeField] private float damageAmount = 1f;
+    [HideInInspector] public bool CanHit;
     Animator anim;
     private RaycastHit2D[] hits;
 
@@ -17,11 +18,15 @@ public class PlayerAttack : MonoBehaviour
     }
     private void Update()
     {
-        if (UserInput.instance.controls.Attack.Attack.WasPressedThisFrame())
+        if(CanHit)
         {
-            Attack();
-            anim.SetTrigger("Attack");
+            if (UserInput.instance.controls.Attack.Attack.WasPressedThisFrame())
+            {
+                Attack();
+                anim.SetTrigger("Attack");
+            }   
         }
+        
     }
 
     private void Attack()
@@ -35,7 +40,7 @@ public class PlayerAttack : MonoBehaviour
 
             // if there is a damageable object
 
-            if(damageable != null )
+            if(damageable != null)
             {
                 //Apple damage 
                 damageable.Damage(damageAmount);

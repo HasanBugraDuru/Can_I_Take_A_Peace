@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.UI;
 
 public class Ability : MonoBehaviour
 
 {
     [SerializeField] float maxMagic;
-    [SerializeField] float currentMagic;
-    [SerializeField] float rechargeTimer;
-    [SerializeField] bool isScanning;
-     
+    [SerializeField] public float currentMagic;
+    [SerializeField] public float rechargeTimer;
+    [SerializeField] public bool isScanning;
+    [SerializeField] Image AbilityBar;
+    [SerializeField] private float Amount = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -28,22 +30,30 @@ public class Ability : MonoBehaviour
             rechargeTimer = 0f;
             Debug.Log("isScanning");
         }
-         if (UserInput.instance.controls.Attack.Scan.WasReleasedThisFrame())
+        if (UserInput.instance.controls.Attack.Scan.WasReleasedThisFrame())
         {
             isScanning = false;
         }
 
         if (isScanning == false)
         {
-            rechargeTimer += Time.deltaTime;
-            if (rechargeTimer > 3)
-                currentMagic += 10 * Time.deltaTime;
+            
+            if (rechargeTimer >= 3)
+            {
+                currentMagic += 10f * Time.deltaTime;
+            }
+            else
+            {
+                rechargeTimer += Time.deltaTime;
+            }
+                
         }
 
         if (currentMagic > maxMagic)
             currentMagic = maxMagic;
         if (currentMagic < 0)
             currentMagic = 0;
+        AbilityBar.fillAmount = currentMagic / maxMagic;
 
     }
     private void OnTriggerStay2D(Collider2D collision)
@@ -51,7 +61,7 @@ public class Ability : MonoBehaviour
         if (collision.CompareTag("vision")&&isScanning &&currentMagic>0)
         {
             collision.GetComponent<Light2D>().intensity = 2f;
-            currentMagic -= Time.deltaTime * 10f;
+            currentMagic -= Time.deltaTime * Amount;
             Debug.Log("Seeing");
         }
         else if(collision.GetComponent<Light2D>()!=null)
