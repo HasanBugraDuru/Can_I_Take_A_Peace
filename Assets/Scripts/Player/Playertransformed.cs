@@ -15,6 +15,7 @@ public class Playertransformed : MonoBehaviour
     Player player;
     Collider2D coll;
     SpriteRenderer sp;
+    PlayerAttack pa;
 
 
     private void Start()
@@ -23,6 +24,7 @@ public class Playertransformed : MonoBehaviour
         player = GetComponent<Player>();
         sp = GetComponent<SpriteRenderer>();
         coll = GetComponent<Collider2D>();
+        pa = GetComponent<PlayerAttack>();
         intransformable = false;
         playerAbility = GetComponentInChildren<Ability>();
     }
@@ -34,6 +36,7 @@ public class Playertransformed : MonoBehaviour
         {
             if (playerAbility.currentMagic <= 0)
             {
+                pa.CanHit = true;
                 ChangeBack();
             }
             else
@@ -57,7 +60,11 @@ public class Playertransformed : MonoBehaviour
         transformable = Physics2D.CircleCast(changeTransform.position, changeRange,
             transform.right,0f,changableLayer );
         ITransformable changable =  transformable.collider.gameObject.GetComponent<ITransformable>();
-        if(changable != null)
+        if (transformable.collider.gameObject.CompareTag("Devil"))
+        {
+            changable.ChangColor();
+        }
+        else if(changable != null && !transformable.collider.gameObject.CompareTag("Devil"))
         {
             transform.position = transformable.transform.position;
             changable.ChangColor();
@@ -70,6 +77,7 @@ public class Playertransformed : MonoBehaviour
     }
     private void ChangeBack()
     {
+        intransformable = false;
         playerAbility.isScanning = false;
         sp.enabled = true;
         coll.enabled = true;

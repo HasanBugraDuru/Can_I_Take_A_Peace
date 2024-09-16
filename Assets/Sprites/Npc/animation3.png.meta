@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8453c1f294923a14bb6077471c3e92d2
+guid: 244697c8935cb3749a564fc51c416423
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,631 +123,757 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MiniPrinceMan_0
+      name: animation3_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 161
-        width: 10
-        height: 14
+        x: 0
+        y: 335
+        width: 60
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d0e8d13891598c47abb4df8efaf4ea0
-      internalID: -1028768457
+      spriteID: 6c5bd8572f6a3fa47a338dd6356eddf9
+      internalID: -1341244740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniPrinceMan_1
+      name: animation3_1
       rect:
         serializedVersion: 2
-        x: 43
-        y: 161
-        width: 10
-        height: 14
+        x: 84
+        y: 334
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce7bb4cfa0b4dbd4fa1f773085fabd8d
-      internalID: -756151739
+      spriteID: ea935d63b2f704545b62e7b8f7769f08
+      internalID: -845545597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniPrinceMan_2
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 161
-        width: 10
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e7929b2516dd0141a4031a03ce5eef7
-      internalID: 526204162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_3
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 161
-        width: 10
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4516fb554cd0fe44809f95ae751f4ed
-      internalID: 1701026172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_4
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 129
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f5aba5d9ccc19449b32cac197a1669f
-      internalID: -2119149448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_5
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 129
-        width: 13
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cecf0f9031645c1478d22d04f8df8434
-      internalID: 932192859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_6
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 130
-        width: 13
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 320acda0c00432b45bf2775d17bcf366
-      internalID: -48801853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_7
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 129
-        width: 12
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f026fb2f6a85aa6478e6814371ab701f
-      internalID: 488555897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_8
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 129
-        width: 13
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f8c890e2275e534fa0eaa64cf93fe68
-      internalID: 2024238320
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_9
-      rect:
-        serializedVersion: 2
-        x: 168
-        y: 130
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44c2ea501c07fe64389b8aeeca1447c7
-      internalID: 783457318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_10
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 98
-        width: 12
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 667ae0cd2b250684b8ac854e68ecfdec
-      internalID: -132649155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_11
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 98
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd9b2b6e1c8317f4395b46136588bf39
-      internalID: -1249657852
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_12
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 98
-        width: 12
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e0674f0809b0d040b80c31f449435af
-      internalID: -460515547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_13
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 97
-        width: 12
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54bf9925b85b3434aa504cd9a26191a4
-      internalID: 1740969634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_14
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 97
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21c9682f06719744a995c36792ec7426
-      internalID: -98463599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_15
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 65
-        width: 11
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e37b054c9e946ae4d84759465b060307
-      internalID: -285130877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_16
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 65
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f222cd67f151844438508cca70b07d2d
-      internalID: -305392252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_17
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 65
-        width: 19
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 492e3686137efd944b8defdaf39b8305
-      internalID: 1944401662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_18
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 65
-        width: 17
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dee578d0d9452b642b38725fe8acca67
-      internalID: -1005217872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_19
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 65
-        width: 16
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0cec8eba03cecd418391f1763f894b9
-      internalID: -1247193825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniPrinceMan_20
+      name: animation3_2
       rect:
         serializedVersion: 2
         x: 172
-        y: 65
-        width: 12
-        height: 12
+        y: 332
+        width: 60
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78e0a900b9adf5b48a5d4bd4a3e77f41
-      internalID: 1276318322
+      spriteID: b739a9538372ec342b16416d57436245
+      internalID: -905326816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniPrinceMan_21
+      name: animation3_3
       rect:
         serializedVersion: 2
-        x: 10
-        y: 33
-        width: 11
-        height: 14
+        x: 269
+        y: 335
+        width: 60
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d32bf46d59b6934f8a9a09828073d3a
-      internalID: 768711084
+      spriteID: 1f3a823ade9a0384190ce6680ee3a8f4
+      internalID: -657649683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniPrinceMan_22
+      name: animation3_4
       rect:
         serializedVersion: 2
-        x: 35
-        y: 33
-        width: 19
-        height: 12
+        x: 372
+        y: 336
+        width: 60
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23bf3e5bb59337d4f8cf46ed884ae125
-      internalID: -1496812574
+      spriteID: f60277be9e6ec84418dab187fd76416f
+      internalID: 489311160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniPrinceMan_23
+      name: animation3_5
       rect:
         serializedVersion: 2
-        x: 72
-        y: 33
-        width: 13
-        height: 14
+        x: 469
+        y: 335
+        width: 60
+        height: 81
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fbaf013cc3f9934784715579455e675
-      internalID: -1698949071
+      spriteID: 45508ff606a2660438bdbd93eb640df7
+      internalID: 864008021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniPrinceMan_24
+      name: animation3_6
       rect:
         serializedVersion: 2
-        x: 10
+        x: 554
+        y: 331
+        width: 60
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38019755d34239c4a96a8bf760ffa92b
+      internalID: -1524338642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_7
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 335
+        width: 58
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f00566c20b05a24cb7aea3b4c4ae52d
+      internalID: -602597294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_8
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 376
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d5aaefbc56d314294b58190ec9ad6b
+      internalID: 1831240148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_11
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 358
+        width: 4
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32b2633d440b3a4c8d6bd5c82544eca
+      internalID: -37437056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_13
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 223
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107e2254c39a3fd4c9540696c5174ac0
+      internalID: 808909745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_14
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 224
+        width: 56
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5bf675f4bb3aa4fafd03a0ba8cec01
+      internalID: -1825283517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_15
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 231
+        width: 52
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fcec0a407e4dc44b91198eea641394
+      internalID: -353524362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_16
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 224
+        width: 56
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da968747c0c7f04fbdc5116357e9526
+      internalID: -1042013333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_17
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 227
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37f9d9a5c220274887c464978110403
+      internalID: 609031136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_18
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 227
+        width: 68
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c3ff7dc6735e945a31498ee915fae8
+      internalID: 1542101195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_19
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 231
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afdfa2148934bd45893e786c4562f63
+      internalID: 770308875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_20
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 228
+        width: 68
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784f2d38b39132641bcfc2ab9ea8a16d
+      internalID: -2081410188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_21
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 247
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9acdeeaf4155ac4092a5db2f15ed2a6
+      internalID: 1097144671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_25
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 116
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f12d93ab2d1214893d6f092ec1757f
+      internalID: 1867022495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_26
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 114
+        width: 68
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3156802782a6546ab7d988e2353320
+      internalID: -886794958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_27
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 124
+        width: 80
+        height: 87
+      alignment: 9
+      pivot: {x: 0.506642, y: 0.49461013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d8cdc0a41ba3645bdc8f8fdf26754a
+      internalID: 1048907915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_28
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 127
+        width: 92
+        height: 83
+      alignment: 9
+      pivot: {x: 0.52310246, y: 0.5348911}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f49c2ce363c414d894d3d43ff3fc23
+      internalID: -1262385851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_29
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 127
+        width: 100
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c561de530941132408ec7809c34cb3b7
+      internalID: -1136894944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_30
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 126
+        width: 100
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c55c93d4a2674458494b6c40438a2e
+      internalID: 1406820833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_31
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 128
+        width: 100
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5861554943ef0fa4da8f4fc7e9888b18
+      internalID: 861182130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_32
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 128
+        width: 100
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f6c8090e9ce5f47ae38afb16f78a16
+      internalID: 1229795684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_33
+      rect:
+        serializedVersion: 2
+        x: 11
         y: 1
-        width: 12
-        height: 13
+        width: 60
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd55e96111495ed4ba6ee73ce8cfc0eb
-      internalID: -295636023
+      spriteID: 42b4278266c0ad140ad269097999b6c7
+      internalID: -1763827915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniPrinceMan_25
+      name: animation3_34
       rect:
         serializedVersion: 2
-        x: 38
-        y: 1
-        width: 16
-        height: 11
+        x: 101
+        y: 0
+        width: 68
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 051f8c2641acb5e43ad2a4d3a2d0aafc
-      internalID: -2136598783
+      spriteID: 302d033c16d2a7f49ad5afbea5f76441
+      internalID: -1686461791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniPrinceMan_26
+      name: animation3_35
       rect:
         serializedVersion: 2
-        x: 68
-        y: 1
-        width: 18
-        height: 11
+        x: 202
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9597d26b6f5fbeb449bce988806d6a16
-      internalID: -950607121
+      spriteID: a240de333dfd86448a088831e2cc879b
+      internalID: -566327361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniPrinceMan_27
+      name: animation3_36
       rect:
         serializedVersion: 2
-        x: 102
-        y: 1
-        width: 19
-        height: 7
+        x: 303
+        y: 0
+        width: 60
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e03fcf7d78b3fbe4caa3fca9bb0c5bf8
-      internalID: -1502258906
+      spriteID: a6771a2fdcdaf3f4c9e0432bba0dbef6
+      internalID: 1520981720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniPrinceMan_28
+      name: animation3_37
       rect:
         serializedVersion: 2
-        x: 133
-        y: 1
-        width: 20
-        height: 7
+        x: 396
+        y: 0
+        width: 60
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5bf2f08d5ca81b45b94591988664392
-      internalID: -436183584
+      spriteID: 639a83158e8379245a600ee049037869
+      internalID: -1123726165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniPrinceMan_29
+      name: animation3_38
       rect:
         serializedVersion: 2
-        x: 165
-        y: 1
-        width: 20
-        height: 6
+        x: 504
+        y: 0
+        width: 60
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1153a3b4f1a2544cade286c0d813dd6
-      internalID: 1368054794
+      spriteID: f72ebe51201c1234284e157c8bd60543
+      internalID: -1322741749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_39
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2343775a3ef2361438a24ad13bdb6df1
+      internalID: 820503277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_40
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 0
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa5524ab721f59449963e43d1725c36
+      internalID: 1914544903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation3_41
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 22
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfdf2c16eb81c3d42a0cae3e4a35ba6e
+      internalID: -1820761108
       vertices: []
       indices: 
       edges: []
@@ -763,36 +889,51 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MiniPrinceMan_0: -1028768457
-      MiniPrinceMan_1: -756151739
-      MiniPrinceMan_10: -132649155
-      MiniPrinceMan_11: -1249657852
-      MiniPrinceMan_12: -460515547
-      MiniPrinceMan_13: 1740969634
-      MiniPrinceMan_14: -98463599
-      MiniPrinceMan_15: -285130877
-      MiniPrinceMan_16: -305392252
-      MiniPrinceMan_17: 1944401662
-      MiniPrinceMan_18: -1005217872
-      MiniPrinceMan_19: -1247193825
-      MiniPrinceMan_2: 526204162
-      MiniPrinceMan_20: 1276318322
-      MiniPrinceMan_21: 768711084
-      MiniPrinceMan_22: -1496812574
-      MiniPrinceMan_23: -1698949071
-      MiniPrinceMan_24: -295636023
-      MiniPrinceMan_25: -2136598783
-      MiniPrinceMan_26: -950607121
-      MiniPrinceMan_27: -1502258906
-      MiniPrinceMan_28: -436183584
-      MiniPrinceMan_29: 1368054794
-      MiniPrinceMan_3: 1701026172
-      MiniPrinceMan_4: -2119149448
-      MiniPrinceMan_5: 932192859
-      MiniPrinceMan_6: -48801853
-      MiniPrinceMan_7: 488555897
-      MiniPrinceMan_8: 2024238320
-      MiniPrinceMan_9: 783457318
+      animation3_0: -1341244740
+      animation3_1: -845545597
+      animation3_10: -817675517
+      animation3_11: -37437056
+      animation3_12: 598819154
+      animation3_13: 808909745
+      animation3_14: -1825283517
+      animation3_15: -353524362
+      animation3_16: -1042013333
+      animation3_17: 609031136
+      animation3_18: 1542101195
+      animation3_19: 770308875
+      animation3_2: -905326816
+      animation3_20: -2081410188
+      animation3_21: 1097144671
+      animation3_22: -133550369
+      animation3_23: -590750562
+      animation3_24: -1373732743
+      animation3_25: 1867022495
+      animation3_26: -886794958
+      animation3_27: 1048907915
+      animation3_28: -1262385851
+      animation3_29: -1136894944
+      animation3_3: -657649683
+      animation3_30: 1406820833
+      animation3_31: 861182130
+      animation3_32: 1229795684
+      animation3_33: -1763827915
+      animation3_34: -1686461791
+      animation3_35: -566327361
+      animation3_36: 1520981720
+      animation3_37: -1123726165
+      animation3_38: -1322741749
+      animation3_39: 820503277
+      animation3_4: 489311160
+      animation3_40: 1914544903
+      animation3_41: -1820761108
+      animation3_42: 396041063
+      animation3_43: 455747766
+      animation3_44: -1207613606
+      animation3_5: 864008021
+      animation3_6: -1524338642
+      animation3_7: -602597294
+      animation3_8: 1831240148
+      animation3_9: -607629495
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

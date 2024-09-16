@@ -23,6 +23,7 @@ public class PlayerAttack : MonoBehaviour
             if (UserInput.instance.controls.Attack.Attack.WasPressedThisFrame())
             {
                 Attack();
+                anim.SetBool("Devil",CanHit);
                 anim.SetTrigger("Attack");
             }   
         }

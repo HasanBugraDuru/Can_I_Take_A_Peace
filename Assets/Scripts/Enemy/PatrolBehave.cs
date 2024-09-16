@@ -47,13 +47,13 @@ public class PatrolBehave : MonoBehaviour
             }
             
 
-            Debug.Log("MOVE");
+            //Debug.Log("MOVE");
         }
         else if(currentPoint+1<=points.Length-1)
         {
             nextPoint = points[currentPoint + 1].transform;
             currentPoint += 1;
-            Debug.Log("Arrived");
+            //Debug.Log("Arrived");
             
         }
         else
@@ -61,7 +61,7 @@ public class PatrolBehave : MonoBehaviour
             
             currentPoint = 0;
             nextPoint = points[currentPoint].transform;
-            Debug.Log("Resetindex");
+           //Debug.Log("Resetindex");
         }
         animator.SetFloat("speed", Mathf.Abs(speed));
     }
