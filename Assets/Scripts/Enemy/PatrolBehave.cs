@@ -37,8 +37,6 @@ public class PatrolBehave : MonoBehaviour
             {
                 _rb.AddForce(Vector2.right * moveSpeed);
                 FlipRight();
-                
-
             }
             else
             {

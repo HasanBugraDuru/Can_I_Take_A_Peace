@@ -18,10 +18,11 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     {
         currentHealth -= damageAmount;
 
-        if (currentHealth <= 0)
+        if (currentHealth < 1)
         {
-            Die();
-        }else if (currentHealth >= 0) 
+            animator.SetTrigger("Dead");
+            Invoke("Die", 2f); 
+        }else if (currentHealth > 1) 
         {
             animator.SetTrigger("Hit");
         }

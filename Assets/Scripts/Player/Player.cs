@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -42,6 +43,7 @@ public class Player : MonoBehaviour
     {
         Move();
         Jump();
+        if(Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene(4);
     }
 
     #region Movement Functions
