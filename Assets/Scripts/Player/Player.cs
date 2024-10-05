@@ -14,6 +14,9 @@ public class Player : MonoBehaviour
     [Header("Turn Check")]
     [SerializeField] private GameObject lLeg;
     [SerializeField] private GameObject rLeg;
+    [Header("Clips")]
+    [SerializeField] private AudioClip jumpAudio;
+    [SerializeField] private AudioClip walkAudio;
 
     [Header("Ground Check")]
     [SerializeField] private float extraHeight = 0.25f;
@@ -53,6 +56,7 @@ public class Player : MonoBehaviour
         if(moveInput <0 || moveInput >0)
         {
             TurnCheck();
+           // SoundFXManager.instance.PlaySoundFXClip(walkAudio, transform, 1f);
             anim.SetBool("isWalking",true);
         }
         else
@@ -69,6 +73,7 @@ public class Player : MonoBehaviour
             isJumping = true;
             jumpTimeCounter = jumpTime;
             rb.velocity = new Vector2 (rb.velocity.x,jumpForce);
+            SoundFXManager.instance.PlaySoundFXClip(jumpAudio, transform, 1f);
         }
 
         //Jump Button is being help

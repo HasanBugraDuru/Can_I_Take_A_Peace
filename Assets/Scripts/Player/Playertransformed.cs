@@ -75,6 +75,7 @@ public class Playertransformed : MonoBehaviour
             print(sp.enabled);
             coll.enabled = false;
             player.enabled = false;
+            rb.velocity = Vector3.zero;
             rb.isKinematic = true;
         }
     }
