@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
     Animator anim;
     private Rigidbody2D rb;
     private Collider2D coll;
+    
     private float moveInput;
 
     private bool isJumping;
